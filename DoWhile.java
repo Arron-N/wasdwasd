@@ -1,4 +1,4 @@
-public class HelloWorld
+public class DoWhile
 {
 
     int a = 5;
@@ -9,25 +9,26 @@ public class HelloWorld
     public void run() {
         int i = 10;
         int k = 80;
-        while (i < 15) {
+        do {
             System.out.println(i + " is less than 15");
             i += 1;
-        }
-        while (k > 5) {
+        } while (i < 15);
+        do {
             System.out.println( k + " is greater than 5");
             k = k/2;
-        }
-        while (a < 10 && b <= 20) {
+        } while (k > 5);
+        do {
             System.out.println(a*b);
             a++;
             b = b + 4;
-        }
+        } while (a < 10 && b <= 20);
         System.out.println("Hello World!");
     }
 
     public static void main(String[] args)
     {        
-        HelloWorld hw = new HelloWorld();
+        DoWhile hw = new DoWhile();
         hw.run();
     }
 }
+

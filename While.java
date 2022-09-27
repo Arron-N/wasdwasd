@@ -1,4 +1,4 @@
-public class HelloWorld2
+public class While
 {
 
     int a = 5;
@@ -9,26 +9,25 @@ public class HelloWorld2
     public void run() {
         int i = 10;
         int k = 80;
-        do {
+        while (i < 15) {
             System.out.println(i + " is less than 15");
             i += 1;
-        } while (i < 15);
-        do {
+        }
+        while (k > 5) {
             System.out.println( k + " is greater than 5");
             k = k/2;
-        } while (k > 5);
-        do {
+        }
+        while (a < 10 && b <= 20) {
             System.out.println(a*b);
             a++;
             b = b + 4;
-        } while (a < 10 && b <= 20);
+        }
         System.out.println("Hello World!");
     }
 
     public static void main(String[] args)
     {        
-        HelloWorld2 hw = new HelloWorld2();
+        While hw = new While();
         hw.run();
     }
 }
-
